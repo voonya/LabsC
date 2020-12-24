@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+    cout << "Stroke: ";
     char input_str[100];
     cin.getline(input_str, 256);
 
@@ -17,7 +18,7 @@ int main() {
 
     //удаляем из исходной строки слова, которые повторяются
     string new_str = delete_repeat(input_str, repeat_words, number_rep_w);
-    cout << new_str;
+    cout << "Result: " << new_str;
 
     return 0;
 }
